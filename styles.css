@@ -1,0 +1,114 @@
+body{
+    margin:0%;
+    background-color:rgba(254, 255, 239);
+    -webkit-text-fill-color: red;
+    font-family:'Roboto',sans-serif;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+h1{
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform:translate(-50%,-100%);
+
+}
+
+button{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translateX(-50%);
+    color:aqua;
+    background-color:transparent;
+    transition:transform 100ms;
+}
+
+button:hover{
+    text-decoration-line: underline;
+    border-color:aquamarine;
+}
+
+.typing{
+    width:30ch;
+    animation:typing 2s steps(35),blink 0.7s step-end infinite alternate;
+    overflow:hidden;
+    white-space:nowrap;
+    border-right:3px solid;
+
+}
+
+@keyframes typing{
+    from{width:0}
+}
+
+@keyframes blink{
+    50%{
+        border-color:transparent;
+    }
+}
+
+.full{
+    opacity:30%;
+    margin:0%;
+    width:100vw;
+
+}
+
+img{
+    width:10vw;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%)
+}
+
+#word{
+    position:absolute;
+    top:50%;
+    left:40%;
+    transform:translate(-50%,-50%);
+}
+
+.fill{
+    animation-timing-function: ease-in;
+    animation-name:full;
+    animation-duration:2s;
+}
+
+@keyframes fill{
+    0%{opacity:0%}
+    100%{opacity:100%}
+
+}
+
+.biiiig{
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:Arial, Helvetica, sans-serif;
+    animation: gobig 1.5s ease-in;
+    font-size:72px;
+    height:100vh;
+
+}
+
+@keyframes gobig{
+    0%{transform:scale(0.5);}
+    90%{transform:scale(3.0);}
+    100%{transform:scale(1.0);}
+
+}
+
+.popin{
+    animation:popin 3s ease-in;
+}
+
+@keyframes popin{
+    0%{opacity:0;transform:scale(0.9)}
+    80%{opacity:0.8;transform:scale(1.1)}
+    100%{opacity:1;transform:scale(1)}
+}
